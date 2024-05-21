@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes sliding{
+            0%{
+                background-color: yellow;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                top: 325px;
+                background-color: red;
+                transform: scale(0.5);
+            }
+            50%{
+                top: 0;
+                background-color: yellow;
+                transform: scale(1);
+            }
+            75%{
+              top: 325px;
+              background-color: red;
+              transform: scale(0.5);
+            }
+            100%{
+                background-color: yellow;
+                left: 900px;
+                top: 0;
+            }
+        }
+        .stage{
+            height: 400px;
+            width: 1000px;
+            background-color: lightskyblue;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: limegreen;
+            position: relative;
+            animation: sliding 3s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transform.html">Transform</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="">Contact Me</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome To My Home</h1>
+    </header>
+    <h1>Lets explore Animation</h1>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
