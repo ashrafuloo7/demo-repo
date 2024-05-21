@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .field{
+            border: 1px solid;
+            height: 90%;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: red;
+            position:  relative;
+            left: 660px;
+            transition: transform 1s ease-out 0.3s;
+        }
+        .field:hover .ball{
+            transform: translate(800px,-100px);
+        }
+        .bat{
+            transition: transform 0.2s ease-in;
+        }
+      
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+    
+    </style>
+    <body>
+        <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transform.html">Transform</a></li>
+                <li><a href="cricket.html">Cricket</a></li>
+                <li><a href="">Contact Me</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome To My Home</h1>
+    </header>
+        <div class="field">
+            <img class="bat" src="images/bat.png" alt="">
+            <div class="ball"></div>
+        </div>
+    </body>
+    </html>
